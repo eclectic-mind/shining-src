@@ -1,0 +1,22 @@
+doctype html
+html
+  include ./parts/head.pug
+
+  body
+    .page-wrapper
+      include ./parts/mobile-menu.pug
+      .container
+        include ./parts/panel.pug
+        include ./parts/aside.pug
+        
+        main
+          include ./parts/slider.pug
+
+    .shadow.invisible
+      .modal.invisible
+        a(href="#").close
+        #feedback
+          include ./parts/feedback.pug
+
+script(type="text/javascript", src="scripts/bundle.js")
+script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")

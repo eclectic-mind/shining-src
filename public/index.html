@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Сияние — декор-центр</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <nav class="mobile-menu" id="menu">
+            <ul>
+                <li><a href="/">Каталог товаров</a>
+                    <ul class="submenu">
+                        <li><a href="/">Подпункт 1</a></li>
+                        <li><a href="/">Подпункт 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="/">Новости и акции</a>
+                    <ul class="submenu">
+                        <li><a href="/">Подпункт 1</a></li>
+                        <li><a href="/">Подпункт 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="/">наши услуги</a>
+                    <ul class="submenu">
+                        <li><a href="/">Подпункт 1</a></li>
+                        <li><a href="/">Подпункт 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="/">портфолио</a>
+                    <ul class="submenu">
+                        <li><a href="/">Подпункт 1</a></li>
+                        <li><a href="/">Подпункт 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="/">блог</a></li>
+                <li><a href="/">контакты</a></li>
+                <li><a href="/">О компании</a></li>
+                <li><a href="/">Отзывы о нас</a></li>
+                <li><a href="/">Доставка и оплата</a></li>
+                <li><a href="/">Дизайнеры</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="mobile-top-panel"><a class="sandwitch" href="#menu">
+                    <div class="line"> </div>
+                </a><a class="logo" href="#">
+                    <h1>Сияние</h1>
+                </a><a class="mobile-call" href="#call-popup" id="call-us-mob"></a></div>
+            <aside>
+                <div class="logo-block wrapper"><a class="logo logo-framed" href="#">
+                        <h1>Сияние</h1>
+                    </a>
+                    <h4 class="slogan">Интернет-магазин отделочных материалов и дизайна.</h4>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="/">Каталог товаров</a></li>
+                        <li><a href="/" id="news">Новости и акции</a></li>
+                        <li><a href="/">наши услуги</a></li>
+                        <li><a href="/">портфолио</a></li>
+                        <li><a href="/">блог</a></li>
+                        <li><a href="/">контакты</a></li>
+                    </ul>
+                </nav>
+                <nav class="links wrapper">
+                    <ul>
+                        <li><a href="/">О компании</a></li>
+                        <li><a href="/">Отзывы о нас</a></li>
+                        <li><a href="/">Доставка и оплата</a></li>
+                        <li><a href="/">Дизайнеры</a></li>
+                    </ul>
+                </nav>
+                <div class="contacts-block wrapper"><span class="phone">+7 (4822) 648–080</span><a href="#call-popup" id="call-us">Заказать звонок</a></div>
+            </aside>
+            <main>
+                <div class="slider owl-carousel">
+                    <div class="slide slide">
+                        <div class="title">
+                            <h2>Декоративные покрытия<small>от лучших производителей (1)</small></h2><a class="more" href="/">подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide slide">
+                        <div class="title">
+                            <h2>Декоративные покрытия<small>от лучших производителей (2)</small></h2><a class="more" href="/">подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide slide3">
+                        <div class="title">
+                            <h2>Декоративные покрытия<small>от лучших производителей (3)</small></h2><a class="more" href="/">подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide slide4">
+                        <div class="title">
+                            <h2>Декоративные покрытия<small>от лучших производителей (4)</small></h2><a class="more" href="/">подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="shadow invisible">
+        <div class="modal invisible"><a class="close" href="#"></a>
+            <div id="feedback">
+                <div class="feedback-wrapper">
+                    <form class="feedback-form" enctype="multipart/form-data" method="POST" id="form" onsubmit="send(event, 'send.php')" name="form" novalidate>
+                        <h3 class="form-title">Обратная связь</h3>
+                        <div class="field-block"><label for="email">E-mail<span class="asterisk">*</span></label><input type="email" name="email" autocomplete="off" required id="email"></div>
+                        <div class="field-block"><label for="tel">Телефон<span class="asterisk">*</span></label><input type="tel" name="tel" autocomplete="off" required id="telephone"></div>
+                        <div class="field-block"><label for="message">Сообщение<span class="asterisk">*</span></label><textarea class="message" name="message" rows="5" required id="text"></textarea></div>
+                        <div class="field-block"><button type="submit" id="send">Отправить</button></div>
+                    </form>
+                    <div class="success invisible" id="success-msg">
+                        <h3 class="form-title">Ваше сообщение отправлено.</h3>
+                        <p>Мы ответим вам на почту или перезвоним в течение нескольких рабочих дней.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript" src="scripts/bundle.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>

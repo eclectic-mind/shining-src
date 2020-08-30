@@ -1,0 +1,20 @@
+.feedback-wrapper
+  form(enctype="multipart/form-data", method="POST", id="form", onsubmit="send(event, 'send.php')", name="form", novalidate).feedback-form
+    h3.form-title Обратная связь
+    .field-block
+      label(for="email") E-mail
+        span.asterisk *
+      input(type="email", name="email", autocomplete="off", required)#email
+    .field-block
+      label(for="tel") Телефон
+        span.asterisk *
+      input(type="tel", name="tel", autocomplete="off", required)#telephone
+    .field-block
+      label(for="message") Сообщение
+        span.asterisk *
+      textarea(name="message", rows="5", required)#text.message
+    .field-block
+      button(type="submit")#send Отправить
+  #success-msg.success.invisible
+    h3.form-title Ваше сообщение отправлено.
+    p Мы ответим вам на почту или перезвоним в течение нескольких рабочих дней.
